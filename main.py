@@ -18,7 +18,7 @@ while len(adivinados) < 32:
     if answer_state in all_states:
         t = turtle.Turtle()
         t.hideturtle()
-        
+
         t.penup()
         state_data = data[data.state == answer_state]
         t.goto(int(state_data.x),int(state_data.y))
